@@ -164,7 +164,7 @@ const ContractViewPopup = (props: Props) => {
     <Modal
       maskClosable={false}
       width={860}
-      title={`${viewInfo.employee}历史劳动合同`}
+      title={`Contract List`}
       visible={props.viewInfo}
       className="max-height-modal"
       destroyOnClose={true}

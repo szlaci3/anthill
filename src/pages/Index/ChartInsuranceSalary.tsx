@@ -75,7 +75,7 @@ function ChartInsuranceSalary(props) {
     },
     tooltip: {
       formatter: (datum) => {
-        return { name: '社保成本变化', value: `￥${datum.value}` };
+        return { name: 'Insurance ', value: `$${datum.value}` };
       },
     },
     animation: {
@@ -128,7 +128,7 @@ function ChartInsuranceSalary(props) {
     },
     tooltip: {
       formatter: (datum) => {
-        return { name: '薪资成本变化', value: `￥${datum.value}` };
+        return { name: 'Salary ', value: `$${datum.value}` };
       },
     },
     animation: {
@@ -139,11 +139,11 @@ function ChartInsuranceSalary(props) {
   };
   return <>
     <Card className="ice-card vinsurance">
-      <div className="chart-title">社保成本变化</div>
+      <div className="chart-title">Insurance</div>
       <Line {...insuranceConfig} />
     </Card>
     <Card className="ice-card vsalary">
-      <div className="chart-title">薪资成本变化</div>
+      <div className="chart-title">Salary</div>
       <Line {...salaryConfig} />
     </Card>
   </>

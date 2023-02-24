@@ -1,20 +1,4 @@
 export default [
-  // {
-  //   path: '/user',
-  //   routes: [
-  //     {
-  //       path: '/user',
-  //       routes: [
-  //         {
-  //           name: 'login',
-  //           path: '/user/login',
-  //           // component: './user/Sandfield',
-  //           component: './user/Login',
-  //         },
-  //       ],
-  //     },
-  //   ],
-  // },
   {
     path: '/404',
     component: './404',
@@ -79,21 +63,21 @@ export default [
       // },
       {
         path: '/index',
-        name: '首页',
+        name: 'Home',
         iconClass: 'index-copy',
         routes: [
           {
             path: './',
-            title: '首页',
+            title: 'Home',
             component: './Index/Index',
           },
         ],
       },
-      {
-        path: '/staff',
-        name: '员工管理',
-        iconClass: 'yuangongguanli',
-        routes: [
+      // {
+      //   path: '/staff',
+      //   name: 'Staff',
+      //   iconClass: 'yuangongguanli',
+      //   routes: [
           // {
           //   path: './employee',
           //   name: '员工信息总览',
@@ -128,12 +112,12 @@ export default [
           // },
           {
             path: './contract',
-            name: '员工合同管理',
-            isForCharge: true,
+            name: 'Contract',
+            iconClass: 'yuangongguanli',//
             routes: [
               {
                 path: './',
-                title: '员工合同管理',
+                title: 'Contract',
                 component: './Staff/Contract/Contract',
               },
             ],
@@ -195,8 +179,8 @@ export default [
           //     },
           //   ],
           // },
-        ],
-      },
+      //   ],
+      // },
       // {
       //   path: '/payable',
       //   name: '社保薪资管理',

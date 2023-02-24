@@ -23,19 +23,12 @@ const GlobalHeaderRight: React.FC = () => {
   }
   return (
     <Space className={className}>
-      <a
-        href={`${SERVERIP}/index.html`}
-        className="messages-door"
-        >
-        <img alt="" src={app_switch} />
-        切换至旧版
-      </a>
       <Link
         to="/messages/unread"
         className="messages-door"
         >
         <img alt="" src={remindIcon} />
-        系统通知
+        Messages
       </Link>
       <AvatarDropdown />
     </Space>

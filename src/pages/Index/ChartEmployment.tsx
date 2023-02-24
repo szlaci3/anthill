@@ -5,9 +5,9 @@ import { Card } from 'antd';
 
 function ChartEmployment(props) {
   const {month, monthday} = props;
-  const joinCount = '入职';
-  const outCount = '离职';
-  const tryCount = '试用期';
+  const joinCount = 'Entry';
+  const outCount = 'Resignation';
+  const tryCount = 'Probation';
 
   const res = useRequest(() => joinOutStaff(),
     {
@@ -110,7 +110,7 @@ function ChartEmployment(props) {
     }
   };
   return <Card className="ice-card vemployment">
-    <div className="chart-title">入离职人数趋势分析</div>
+    <div className="chart-title">Trend of Employee Movement</div>
     <Line {...config} />
   </Card>
 };

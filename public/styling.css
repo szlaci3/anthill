@@ -17,10 +17,10 @@ html {
   padding: 0 21px 0 27px;
 }
 .ant-layout .ant-pro-sider-logo img {
-  height: 38px;
+  height: 87px;
 }
 .ant-layout .ant-pro-sider-collapsed img {
-  height: 48px;
+  height: 28px;
 }
 .ant-layout-sider .ant-menu {
   font-size: 16px;
@@ -5551,5 +5551,7 @@ input.institute-name:not(:focus) {
 .amap-sug-result {
   border: none;
 }
-
+.ss .ant-pro-sider-light .ant-pro-sider-logo h1 {
+  display: none;
+}
 

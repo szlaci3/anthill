@@ -12,8 +12,6 @@
     "i18n-remove": "pro i18n-remove --locale=zh-CN --write",
     "postinstall": "umi g tmp",
     "lint": "umi g tmp && npm run lint:js && npm run lint:style && npm run lint:prettier && npm run tsc",
-    "lint-staged": "lint-staged",
-    "lint-staged:js": "eslint --ext .js,.jsx,.ts,.tsx ",
     "lint:fix": "eslint --fix --cache --ext .js,.jsx,.ts,.tsx --format=pretty ./src && npm run lint:style",
     "lint:js": "eslint --cache --ext .js,.jsx,.ts,.tsx --format=pretty ./src",
     "lint:prettier": "prettier -c --write \"src/**/*\" --end-of-line auto",
@@ -32,13 +30,6 @@
     "test": "react-scripts test --env=jsdom",
     "test:component": "umi test ./src/components",
     "test:e2e": "node ./tests/run-tests.js"
-  },
-  "lint-staged": {
-    "**/*.less": "stylelint --syntax less",
-    "**/*.{js,jsx,ts,tsx}": "npm run lint-staged:js",
-    "**/*.{js,jsx,tsx,ts,less,md,json}": [
-      "prettier --write"
-    ]
   },
   "browserslist": [
     "> 1%",
@@ -120,9 +111,6 @@
   },
   "engines": {
     "node": ">=10.0.0"
-  },
-  "gitHooks": {
-    "commit-msg": "fabric verify-commit"
   },
   "jest": {
     "transformIgnorePatterns": [

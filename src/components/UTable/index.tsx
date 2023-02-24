@@ -154,10 +154,7 @@ function UTable(props) {
         options={false}
         search={false}
         search_keyword={paramsStatus.search_keyword}
-        toolBarRender={() => [
-          ...toolBarButtons,
-          <Search size="large" placeholder={searchPlaceholder} allowClear onSearch={onSearch} className='u-search' enterButton={<img alt="" src={searchIcon} />}/>
-        ]}
+        toolBarRender={() => toolBarButtons}
         pageMax={res.data && res.data.page.max}
         pagination={{
           current: paramsStatus.page,

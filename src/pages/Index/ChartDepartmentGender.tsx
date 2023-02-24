@@ -77,7 +77,7 @@ function ChartDepartmentGender(props) {
             width = _container$getBoundin.width,
             height = _container$getBoundin.height;
           var d = Math.sqrt(Math.pow(width / 2, 2) + Math.pow(height / 2, 2));
-          var text = datum ? datum.name : '总计';
+          var text = datum ? datum.name : 'All';
           return renderStatistic(d, text, { fontSize: 28 });
         },
       },
@@ -86,8 +86,8 @@ function ChartDepartmentGender(props) {
         style: { fontSize: '12px' },
         customHtml: function customHtml(container, view, datum, data) {
           return datum
-            ? '<div><span style="color: #FB9A99">' + datum.value + '</span><span style="font-weight: normal; color: #9DAAB6"> 人</span></div>'
-            : '<div><span style="color: #FB9A99">' + data.reduce(function (r, d) {return r + d.value;}, 0) + '</span><span style="font-weight: normal; color: #9DAAB6"> 人</span></div>';
+            ? '<div><span style="color: #FB9A99">' + datum.value + '</span><span style="font-weight: normal; color: #9DAAB6"></span></div>'
+            : '<div><span style="color: #FB9A99">' + data.reduce(function (r, d) {return r + d.value;}, 0) + '</span><span style="font-weight: normal; color: #9DAAB6"></span></div>';
         },
       },
     },
@@ -145,8 +145,8 @@ function ChartDepartmentGender(props) {
   if(mawRes.data) {
     _man = +(mawRes.data || {}).man;
     _woman = +(mawRes.data || {}).women;// "e"
-    men = [{name: "男", value: _man}];
-    women = [{name: "女", value: _woman}];
+    men = [{name: "M", value: _man}];
+    women = [{name: "F", value: _woman}];
     // _man = 0;
     // _woman = 0;
     menRatio = _man / (_man + _woman) || 0;
@@ -235,18 +235,18 @@ function ChartDepartmentGender(props) {
 
   return <>
     <Card className="ice-card vdepartment">
-      <div className="chart-title">部门人数统计</div>
+      <div className="chart-title">By Department</div>
       <Pie {...deptConfig} />
     </Card>
 
     <Card className="ice-card vgender">
-      <div className="chart-title">员工性别比例</div>
+      <div className="chart-title">By Gender</div>
       <div className="gender-diagram">
-        <span><b>男性</b> {_man} 人</span>
+        <span> {_man} <b>Men</b></span>
         <RadialBar {...menConfig} />
       </div>
       <div className="gender-diagram">
-        <span><b>女性</b> {_woman} 人</span>
+        <span> {_woman} <b>Women</b></span>
         <RadialBar {...womenConfig} />
       </div>
     </Card>

@@ -108,7 +108,7 @@ const BasicLayout: React.FC<BasicLayoutProps> = (props) => {
       />
 
       <ProLayout
-        logo={collapsed ? require("@/img/ss-logo-48.png") : require("@/img/ss-logo-38.png")}
+        logo={require("@/img/blue.jpg")}
         {...props}
         title={false}
         collapsed={collapsed}
@@ -122,12 +122,11 @@ const BasicLayout: React.FC<BasicLayoutProps> = (props) => {
               onClick={handleCollapse}
               className='collapse-btn'
             >
-              {collapsed ? <div><MenuUnfoldOutlined />展开</div> : <div><MenuFoldOutlined />收起</div>}
+              {collapsed ? <div><MenuUnfoldOutlined />Expand</div> : <div><MenuFoldOutlined />Collapse</div>}
             </div>
           );
         }}
         menuRender={(menuProps, defaultDom) => (<>
-          {!menuProps.collapsed && <div className="proclaim">功能模块</div>}
           {defaultDom}
         </>)}
         menuDataRender={menuDataRender}

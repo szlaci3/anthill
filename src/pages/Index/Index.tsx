@@ -40,7 +40,7 @@ function Index(props) {
     }else{
       month[i]=1+i
     }
-    month[i]=month[i]+"月"
+    month[i]=month[i]+""
   }
   let monthday = currentDate.getMonth()
 
@@ -61,9 +61,9 @@ function Index(props) {
         <div className="hello2">
           <div>
             <div className="i1">HELLO !</div>
-            <div className="i2">{currentUser.name}<span className="i3">欢迎回来…</span></div>
+            <div className="i2">{currentUser.name}<span className="i3">, welcome back...</span></div>
             <div/>
-            {index && <div className="i4">企业在职人数<span className="number">{index.onjobCount}</span>人</div>}
+            {index && <div className="i4">You have <span className="number">{index.onjobCount}</span> employees</div>}
           </div>
         </div>
         
@@ -71,25 +71,25 @@ function Index(props) {
           {index && <div>
             <Link to="/staff/employee/join" className="ant-btn-primary">
               <img alt="" src={icon39} />
-              待审批入职
+              Joined
               <div className="number">{hasVal(joinInvitations.data) ? joinInvitations.data : "-"}</div>
             </Link>
 
             <a href={void(0)} onClick={() => {history.push("/staff/employee/overview", {filtrate: "contract_to_expire"})}} className="ant-btn-primary">
               <img alt="" src={icon37} />
-              合同到期
+              Employees
               <div className="number">{hasVal(index.contract_to_expire) ? index.contract_to_expire : "-"}</div>
             </a>
 
             <a href={void(0)} onClick={() => {history.push("/staff/employee/overview", {filtrate: "unexecuted_contract"})}} className="ant-btn-primary">
               <img alt="" src={icon32} />
-              合同待签订
+              Pending
               <div className="number">{hasVal(index.unexecuted_contract) ? index.unexecuted_contract : "-"}</div>
             </a>
 
             <a href={void(0)} onClick={() => {history.push("/staff/employee/overview", {filtrate: "contract_try_end"})}} className="ant-btn-primary">
               <img alt="" src={icon15} />
-              待试用期转正
+              Suspended
               <div className="number">{hasVal(index.contract_try_end) ? index.contract_try_end : "-"}</div>
             </a>
           </div>}

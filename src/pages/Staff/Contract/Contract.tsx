@@ -68,18 +68,18 @@ function Contract() {
   }
 
   const alterCols = cols => {
-    const contractNameColIdx = cols.findIndex(col => col.Comment === "合同名称");
+    const contractNameColIdx = cols.findIndex(col => col.Comment === "Hon");
     const lastCol = cols.splice(contractNameColIdx, 1)[0];
     cols.push({
       ...lastCol,
-      Comment: "员工合同信息",
+      Comment: "Actions",
     })
     return cols;
   }
 
   const getEmployeeCol = cols => {
     for (let i = 0; i < cols.length; i++) {
-      if (cols[i].title === "员工姓名") {
+      if (cols[i].title === "Name") {
         return cols[i].dataIndex;
       }
     }
@@ -89,7 +89,7 @@ function Contract() {
     let text = rawData[rowIndex][mergedColumns[columnIndex].dataIndex];
 
     switch (mergedColumns[columnIndex].title) {
-      case "员工合同信息": {
+      case "Actions": {
         let hasContract = !!text;
         text = hasContract ? text.toString() : "";
         let employeeCol = getEmployeeCol(mergedColumns);
@@ -111,7 +111,7 @@ function Contract() {
           onClick={hasContract ? openViewContract : openUploadContract}
           key={rowIndex}
         >
-          {hasContract ? text : "添加劳动合同"}
+          {hasContract ? text : "Upload Contract"}
         </div>)
       }
     }
@@ -159,24 +159,24 @@ function Contract() {
       />
 
       <Card className="top-section">
-        <div className="t1">员工合同管理</div>
+        <div className="t1">Contract</div>
       </Card>
       <UTable
         pageSize={50}
         rowKey={rowKey}
         hiddenCols={["员工编号"]}
-        sorterCols={["员工姓名", "身份证号", "护照号", "性别", "工作城市", "在职状态", "合同类型", "合同起始日期", "试用终止日期", "合同终止日期", "员工合同信息"]}
-        searchCols={["员工姓名", "身份证号"]}
+        sorterCols={[]}
+        searchCols={[]}
         searchPlaceholder="姓名/手机/身份证"
-        actionCols={ ["员工合同信息"]}
-        specialCols={["员工合同信息"]}
+        actionCols={ ["Actions"]}
+        specialCols={["Actions"]}
         getSpecialCell={getSpecialCell}
-        headerTitle={<div className="t2">所有员工查看</div>}
+        headerTitle={<div className="t2">Existing Contracts</div>}
         className="contract-table"
         api={contractData}
         alterCols={alterCols}
         toolBarButtons={[
-          <Button type="primary" size="large" className="common-bulk-upload tall" icon={<ImportOutlined />} onClick={openBulkUpload}>批量导入员工</Button>
+          <Button type="primary" size="large" className="common-bulk-upload tall" icon={<ImportOutlined />} onClick={openBulkUpload}>Import Spreadsheet</Button>
         ]}
         refreshCount={refreshCount}
       />

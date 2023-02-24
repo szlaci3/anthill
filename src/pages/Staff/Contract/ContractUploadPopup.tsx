@@ -101,7 +101,7 @@ const ContractUploadPopup = (props) => {
       width={920}
       colon={false}
       requiredMark={false}
-      title={`${uploadInfo.employee}员工合同选择`}
+      title={`Upload Contract`}
       visible={props.uploadInfo}
       className="contract-upload-modal max-height-modal errors-absolute-modal"
       modalProps={{
