@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>添加人群_people-plus-one</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="设计规范" transform="translate(-1003.000000, -548.000000)">
+            <g id="添加人群_people-plus-one" transform="translate(1003.000000, 548.000000)">
+                <rect id="矩形" fill-opacity="0.01" fill="#FFFFFF" fill-rule="nonzero" x="0" y="0" width="12" height="12"></rect>
+                <path d="M4.75,5 C5.7165,5 6.5,4.2165 6.5,3.25 C6.5,2.2835025 5.7165,1.5 4.75,1.5 C3.7835,1.5 3,2.2835025 3,3.25 C3,4.2165 3.7835,5 4.75,5 Z" id="路径" stroke="#F2F2F2" stroke-width="1.125" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M1,10.2 L1,10.5 L8.5,10.5 L8.5,10.2 C8.5,9.0799 8.5,8.51985 8.282025,8.092025 C8.090275,7.7157 7.7843,7.409725 7.407975,7.217975 C6.98015,7 6.4201,7 5.3,7 L4.2,7 C3.0799,7 2.51985,7 2.09202,7.217975 C1.715695,7.409725 1.4097325,7.7157 1.2179875,8.092025 C1,8.51985 1,9.0799 1,10.2 Z" id="路径" stroke="#F2F2F2" stroke-width="1.125" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M9.5,3.25 L9.5,6.25 L9.5,3.25 Z" id="路径"></path>
+                <path d="M8,4.75 L11,4.75 L8,4.75 Z" id="路径"></path>
+                <path d="M9.5,3.25 L9.5,6.25 M8,4.75 L11,4.75" id="形状" stroke="#F2F2F2" stroke-width="1.125" stroke-linecap="round" stroke-linejoin="round"></path>
+            </g>
+        </g>
+    </g>
+</svg>

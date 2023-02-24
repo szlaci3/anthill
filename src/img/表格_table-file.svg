@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>表格_table-file</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="设计规范" transform="translate(-880.000000, -543.000000)">
+            <g id="表格_table-file" transform="translate(880.000000, 543.000000)">
+                <rect id="矩形" fill-opacity="0.01" fill="#FFFFFF" x="0" y="0" width="22" height="22"></rect>
+                <rect id="矩形" stroke="#C9CFD6" stroke-width="1.125" fill="#C9CFD6" fill-rule="nonzero" stroke-linejoin="round" x="1.83333333" y="2.75" width="18.3333333" height="16.5" rx="0.75"></rect>
+                <line x1="1.83333333" y1="8.25" x2="20.1666667" y2="8.25" id="路径" stroke="#FFFFFF" stroke-width="1.125" stroke-linecap="round" stroke-linejoin="round"></line>
+                <line x1="8.02083333" y1="8.25" x2="8.02083333" y2="19.25" id="路径" stroke="#FFFFFF" stroke-width="1.125" stroke-linecap="round" stroke-linejoin="round"></line>
+                <line x1="13.9791667" y1="8.25" x2="13.9791667" y2="19.25" id="路径" stroke="#FFFFFF" stroke-width="1.125" stroke-linecap="round" stroke-linejoin="round"></line>
+                <line x1="1.83333333" y1="13.75" x2="20.1666667" y2="13.75" id="路径" stroke="#FFFFFF" stroke-width="1.125" stroke-linecap="round" stroke-linejoin="round"></line>
+                <path d="M20.1666667,3.66666667 L20.1666667,18.3333333 C20.1666667,18.8395944 19.756261,19.25 19.25,19.25 L2.75,19.25 C2.24373898,19.25 1.83333333,18.8395944 1.83333333,18.3333333 L1.83333333,3.66666667" id="路径" stroke="#C9CFD6" stroke-width="1.125" stroke-linecap="round" stroke-linejoin="round"></path>
+            </g>
+        </g>
+    </g>
+</svg>

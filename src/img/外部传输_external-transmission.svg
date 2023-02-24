@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>外部传输_external-transmission</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="设计规范" transform="translate(-1063.000000, -547.000000)" stroke="#F2F2F2" stroke-width="1.125">
+            <g id="外部传输_external-transmission" transform="translate(1064.000000, 548.000000)">
+                <line x1="7.71428571" y1="6.10714286" x2="11.5714286" y2="6.10714286" id="路径"></line>
+                <polyline id="路径" points="9.64285714 4.17857143 11.5714286 6.10714286 9.64285714 8.03571429"></polyline>
+                <path d="M4.82142857,0 L4.82142857,6.42857143 C4.82142857,8.59471071 2.83975714,10.7893286 0.964285714,11.5714286" id="路径"></path>
+                <path d="M11.5714286,2.57142857 L11.5714286,0.964285714 C11.5714286,0.431726786 11.1397179,0 10.6071429,0 L0.964285714,0 C0.431726786,0 0,0.431726786 0,0.964285714 L0,10.6071429 C0,11.1397179 0.431726786,11.5714286 0.964285714,11.5714286 L10.6071429,11.5714286 C11.1397179,11.5714286 11.5714286,11.1397179 11.5714286,10.6071429 L11.5714286,9.48214286" id="路径"></path>
+            </g>
+        </g>
+    </g>
+</svg>
