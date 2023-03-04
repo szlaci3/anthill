@@ -29,7 +29,7 @@ function EmployeeDatePicker(props) {
   }
 
   return <div className={"dropdown-field" + (auto ? " auto" : "")}>
-    <DatePicker placeholder={props.disabled ? "" : "请选择"} value={props.value ? moment(props.value) : ""} disabled={props.disabled} onChange={handleChange} onOpenChange={toggleAuto} suffixIcon={props.disabled ? null : <img alt="" src={clockIcon} />} showToday={showToday} className="icon-is-clock">
+    <DatePicker placeholder={props.disabled ? "" : "Pick date"} value={props.value ? moment(props.value) : ""} disabled={props.disabled} onChange={handleChange} onOpenChange={toggleAuto} suffixIcon={props.disabled ? null : <img alt="" src={clockIcon} />} showToday={showToday} className="icon-is-clock">
     </DatePicker>
     {auto && (
       <div className="fetch-holder">

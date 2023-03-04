@@ -24,11 +24,11 @@ let scrollbarWidth = a.offsetWidth - a.clientWidth;// scrollbarSize is 0, needs 
 document.body.removeChild(a);
 
 const defaultData = {
-  s_job_state: "在职",
-  r_career_type: "全职",
-  r_edu: "初中",
-  r_marry: "未婚",
-  r_residence_type: "城镇",
+  s_job_state: "Active",
+  r_career_type: "Full-time",
+  r_edu: "junior high school",
+  r_marry: "Single",
+  r_residence_type: "Urban",
 }
 
 function EmployeeDetails(props) {
@@ -114,7 +114,7 @@ function EmployeeDetails(props) {
       myStaffData.extendValues = JSON.parse(myStaffData.s_info_info || "{}");
       myStaffData.socialPolicy = JSON.parse(myStaffData.s_social_info || "{}");
       myStaffData.age = getAge(new Date(myStaffData.s_birthday));
-      myStaffData.r_career_type = myStaffData.r_career_type === "兼职" ? "兼职" : "全职";
+      myStaffData.r_career_type = myStaffData.r_career_type === "Part-time" ? "Part-time" : "Full-time";
       
       delete myStaffData.s_info_info;
       delete myStaffData.s_social_info;
@@ -209,7 +209,7 @@ function EmployeeDetails(props) {
       ]),
       s_social_info: JSON.stringify(data.socialPolicy),
       s_info_info: JSON.stringify(data.extendValues),
-      s_job_state: "在职",
+      s_job_state: "Active",
     };
 
     delete params.salaryInfo;
@@ -368,8 +368,8 @@ function EmployeeDetails(props) {
     if (ev.target.value === "离职") {
       whetherAdmin();
     }
-    form.setFieldsValue({s_job_state: "在职"});
-    setStaffData({...staffData, s_job_state: "在职"});
+    form.setFieldsValue({s_job_state: "Active"});
+    setStaffData({...staffData, s_job_state: "Active"});
   }
 
 
