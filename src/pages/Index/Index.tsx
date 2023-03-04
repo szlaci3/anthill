@@ -69,29 +69,29 @@ function Index(props) {
         
         <div className="shortcuts">
           {index && <div>
-            <Link to="/staff/employee/join" className="ant-btn-primary">
+            <Link to="/contract" className="ant-btn-primary">
               <img alt="" src={icon39} />
               Joined
               <div className="number">{hasVal(joinInvitations.data) ? joinInvitations.data : "-"}</div>
             </Link>
 
-            <a href={void(0)} onClick={() => {history.push("/staff/employee/overview", {filtrate: "contract_to_expire"})}} className="ant-btn-primary">
+            <Link to="/contract" className="ant-btn-primary">
               <img alt="" src={icon37} />
               Employees
               <div className="number">{hasVal(index.contract_to_expire) ? index.contract_to_expire : "-"}</div>
-            </a>
+            </Link>
 
-            <a href={void(0)} onClick={() => {history.push("/staff/employee/overview", {filtrate: "unexecuted_contract"})}} className="ant-btn-primary">
+            <Link to="/contract" className="ant-btn-primary">
               <img alt="" src={icon32} />
               Pending
               <div className="number">{hasVal(index.unexecuted_contract) ? index.unexecuted_contract : "-"}</div>
-            </a>
+            </Link>
 
-            <a href={void(0)} onClick={() => {history.push("/staff/employee/overview", {filtrate: "contract_try_end"})}} className="ant-btn-primary">
+            <Link to="/contract" className="ant-btn-primary">
               <img alt="" src={icon15} />
               Suspended
               <div className="number">{hasVal(index.contract_try_end) ? index.contract_try_end : "-"}</div>
-            </a>
+            </Link>
           </div>}
         </div>
       </Card>

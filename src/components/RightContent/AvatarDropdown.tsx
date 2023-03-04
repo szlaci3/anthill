@@ -69,8 +69,9 @@ const AvatarDropdown: React.FC<GlobalHeaderRightProps> = ({ menu, forceVisibleAv
       setAfterForceVisible(false);
       const { key } = event;
       if (key === 'logout' && initialState) {
-        setInitialState({ ...initialState, currentUser: undefined });
-        loginOut();
+        // setInitialState({ ...initialState, currentUser: undefined });
+        // loginOut();
+        history.push(`/user`);
         return;
       }
       if (key === 'settings') {
@@ -106,12 +107,12 @@ const AvatarDropdown: React.FC<GlobalHeaderRightProps> = ({ menu, forceVisibleAv
 
       <Menu.Item key="settings">
         <SettingOutlined />
-        账户设置
+        Settings
       </Menu.Item>
 
       {!forceVisibleAvatarDropdown && <Menu.Item key="logout">
         <LogoutOutlined />
-        退出登录
+        Logout
       </Menu.Item>}
     </Menu>
   );
