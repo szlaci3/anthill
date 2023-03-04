@@ -54,13 +54,18 @@ function STabs(props) {
 
   return (
     <>
-      <div className="s-tabs">
-        {tabs.map(eachTab)}
-      </div>
-      <div className={"s-tabs-underline" + (tabsWithError[currentIndex] ? " with-error" : "")}><div style={{width: lineWidth, left: lineLeft, transition: isFirstState ? "none" : "all .3s"}}/></div>
       {tabs.map(eachContent)}
     </>
   );
+  // return (
+  //   <>
+  //     <div className="s-tabs">
+  //       {tabs.map(eachTab)}
+  //     </div>
+  //     <div className={"s-tabs-underline" + (tabsWithError[currentIndex] ? " with-error" : "")}><div style={{width: lineWidth, left: lineLeft, transition: isFirstState ? "none" : "all .3s"}}/></div>
+  //     {tabs.map(eachContent)}
+  //   </>
+  // );
 }
 
 export default STabs;

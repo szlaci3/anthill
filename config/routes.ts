@@ -73,21 +73,26 @@ export default [
           },
         ],
       },
-      // {
-      //   path: '/staff',
-      //   name: 'Staff',
-      //   iconClass: 'yuangongguanli',
-      //   routes: [
+      {
+        path: '/staff',
+        name: 'Form',
+        iconClass: 'yuangongguanli',
+        routes: [
           // {
           //   path: './employee',
           //   name: '员工信息总览',
           //   routes: [
-          //     { path: './', redirect: './overview' },
+              { path: './', redirect: './details' },
           //     {
           //       path: './overview',
           //       title: '在职员工一览',
           //       component: './Staff/Employee/Overview/Overview',
           //     },
+              {
+                path: './details',
+                title: 'Details',
+                component: './Staff/Employee/EmployeeDetails',
+              },
           //     {
           //       path: './details/:id?',
           //       title: '员工信息详情',
@@ -108,12 +113,12 @@ export default [
           //       title: '离职员工一览',
           //       component: './Staff/Employee/Dismissed/Dismissed',
           //     },
-          //   ],
-          // },
+            ],
+          },
           {
             path: './contract',
-            name: 'Contract',
-            iconClass: 'yuangongguanli',//
+            name: 'Table',
+            iconClass: 'shenpi',
             routes: [
               {
                 path: './',

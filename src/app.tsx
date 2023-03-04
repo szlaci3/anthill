@@ -68,7 +68,7 @@ export async function getInitialState(): Promise<{
 
         let large: any;
         if (companyRes.data.logo) {
-          large = companyRes.data.logo.slice(0, 4) === "http" ? companyRes.data.logo.replace("http:", "https:") : ("rootUrlBBB" + "/Uploads/b_" + companyRes.data.logo);
+          large = "";
         } else {
           large = require("@/img/user-male.jpg");
         }

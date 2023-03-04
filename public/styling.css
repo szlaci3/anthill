@@ -1706,6 +1706,7 @@ div.blue {
 }
 .above-tabs .ant-input-group .ant-form-item.rubber-wrapper {
     margin-right: 13px;
+    width: 160px;
 }
 .rubber-wrapper.dimission-type .ant-form-item-control-input {
   height: 32px;/* Correcting an unexplainable css phenomena */
@@ -5555,3 +5556,6 @@ input.institute-name:not(:focus) {
   display: none;
 }
 
+.ntf-spaced {
+  margin-top: 10px;
+}

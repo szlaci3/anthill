@@ -108,7 +108,7 @@ function Contract() {
           data-employee={rawData[rowIndex][employeeCol]}
           onMouseOver={rowHover}
           onMouseOut={rowUnhover}
-          onClick={hasContract ? openViewContract : openUploadContract}
+          // onClick={hasContract ? openViewContract : openUploadContract}
           key={rowIndex}
         >
           {hasContract ? text : "Upload Contract"}
@@ -175,9 +175,9 @@ function Contract() {
         className="contract-table"
         api={contractData}
         alterCols={alterCols}
-        toolBarButtons={[
-          <Button type="primary" size="large" className="common-bulk-upload tall" icon={<ImportOutlined />} onClick={openBulkUpload}>Import Spreadsheet</Button>
-        ]}
+        // toolBarButtons={[
+        //   <Button type="primary" size="large" className="common-bulk-upload tall" icon={<ImportOutlined />} onClick={openBulkUpload}>Import Spreadsheet</Button>
+        // ]}
         refreshCount={refreshCount}
       />
     </>

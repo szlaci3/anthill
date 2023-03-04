@@ -8,10 +8,10 @@ const NoFoundPage: React.FC = () => (
       <img src={require("@/img/planet.png")} alt="" />
     </div>
     <div className="ant-result-title">404</div>
-    <div className="ant-result-subtitle">抱歉，您访问的页面不存在。</div>
+    <div className="ant-result-subtitle">Page not found.</div>
     <div className="ant-result-extra">
       <Button type="primary" onClick={() => history.push('/')}>
-        返回
+        Back
       </Button>
     </div>
   </div>

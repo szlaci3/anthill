@@ -6,15 +6,15 @@ export async function getTitle(params: any | undefined): Promise<any> {
 }
 
 export async function getSocialPolicyCity(): Promise<any> {
-  return myRequest('/globalServices/getSocialPolicyCity', undefined, false, 'GET', true, "rootUrl");
+  return myRequest('/globalServices/getSocialPolicyCity', undefined, false, 'GET', true, rootUrl);
 }
 
 export async function getSocialPolicyData(params: any): Promise<any> {
-  return myRequest('/globalServices/getSocialPolicyData', {...params}, false, 'POST', true, "rootUrl");
+  return myRequest('/globalServices/getSocialPolicyData', {...params}, false, 'POST', true, rootUrl);
 }
 
-export async function chackIdentity(params: any): Promise<any> {
-  return myRequest('/globalServices/chackIdentity', {...params}, false, 'POST', true, "rootUrl");
+export async function parseIdentity(params: any): Promise<any> {
+  return myRequest('/globalServices/parseIdentity', {...params}, false, 'POST', true, rootUrl);
 }
 
 export async function getUploadToken(): Promise<any> {

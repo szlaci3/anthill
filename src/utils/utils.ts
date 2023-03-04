@@ -22,7 +22,7 @@ export const isAntDesignProOrDev = (): boolean => {
 };
 
 /* Mine */
-export const eduOptions = ['初中','中技','硕士','本科','大专','高职','中专','高中','其他'];
+export const eduOptions = ['junior high school ',' technical secondary school ',' master ',' undergraduate ',' junior college ',' higher vocational ',' technical secondary school ',' senior high school ',' other '];
 export const contractTypeOptions = ['劳动合同','实习协议','劳务协议','聘用协议','兼职合同'];
 
 export const hasVal = val => {
