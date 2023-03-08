@@ -1,57 +1,11 @@
-# Ant Design Pro
+ 
+# Laszlo Szalai | Portofolio
 
-This project is initialized with [Ant Design Pro](https://pro.ant.design). Following is a quick guide for how to use it.
+I invite you to view this HR web application demo project deployed on Netlify:
+https://szlaci3-hr.netlify.app/dist/
 
-## Environment Prepare
+This web application is using React hooks and the Ant Design component library. It was challenging due to the poorly written documentation, and I had to correct some buggy Ant Design functionality. I used the Ant Design library alongside npm packages like Babel, Webpack, Umi, Moment and React-Router.
 
-Install `node_modules`:
-
-```bash
-npm install
-```
-
-or
-
-```bash
-yarn
-```
-
-## Provided Scripts
-
-Ant Design Pro provides some useful script to help you quick start and build with web project, code style check and test.
-
-Scripts provided in `package.json`. It's safe to modify or add additional script:
-
-### Start project
-
-```bash
-npm start
-```
-
-### Build project
-
-```bash
-npm run build
-```
-
-### Check code style
-
-```bash
-npm run lint
-```
-
-You can also use script to auto fix some lint error:
-
-```bash
-npm run lint:fix
-```
-
-### Test code
-
-```bash
-npm test
-```
-
-## More
-
-You can view full document on our [official website](https://pro.ant.design). And welcome any feedback in our [github](https://github.com/ant-design/ant-design-pro).
+The Home page showcases various Charts, aiming to visualize data of a given company.
+The Form page uses many types of input, with relevant validation functionality. It is designed for entering data about a new or potential employee.
+The Table page displays the existing employee data. Observe the fixed header, while you scroll along two axis. Behind the scene, it is a virtual table, so the cells are being added and deleted while they enter and leave the view. This is optimal for a lightweight experience in case of large tables with both many columns and high amount of data.
